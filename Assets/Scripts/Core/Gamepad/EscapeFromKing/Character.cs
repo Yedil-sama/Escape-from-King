@@ -29,7 +29,7 @@ namespace Core.Gamepad.EscapeFromKing
                 Die();
             }
 
-            Debug.Log($"{nameof(gameObject)} took {damage.amount} damage");
+            //Debug.Log($"{nameof(gameObject)} took {damage.amount} damage");
             return damage.amount;
         }
         protected virtual void Die()

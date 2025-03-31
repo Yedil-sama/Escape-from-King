@@ -1,6 +1,7 @@
 using UnityEngine;
+using Core.PlayerStates;
 
-namespace Core.Gamepad.EscapeFromKing
+namespace Core
 {
     [RequireComponent(typeof(CharacterController))]
     public class PlayerMovement : MonoBehaviour
@@ -39,8 +40,11 @@ namespace Core.Gamepad.EscapeFromKing
 
         public void Move(Vector3 direction, float speed)
         {
-            characterController.Move(direction * speed * Time.deltaTime);
+            velocity.x = direction.x * speed;
+            velocity.z = direction.z * speed;
+            characterController.Move(velocity * Time.deltaTime);
         }
+
 
         public void Jump()
         {

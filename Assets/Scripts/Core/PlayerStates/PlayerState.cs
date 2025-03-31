@@ -1,4 +1,4 @@
-namespace Core.Gamepad.EscapeFromKing
+namespace Core.PlayerStates
 {
     public class PlayerState
     {

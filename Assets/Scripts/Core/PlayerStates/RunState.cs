@@ -1,13 +1,13 @@
 using UnityEngine;
 
-namespace Core.Gamepad.EscapeFromKing
+namespace Core.PlayerStates
 {
     public class RunState : PlayerState
     {
         public RunState(PlayerMovement playerMovement) : base(playerMovement) { }
         public override void Enter()
         {
-            Debug.Log("Started to Run");
+            //Debug.Log("Started to Run");
         }
         public override void Update()
         {
@@ -27,11 +27,11 @@ namespace Core.Gamepad.EscapeFromKing
                 playerMovement.Jump();
             }
 
-            Debug.Log("Running");
+            //Debug.Log("Running");
         }
         public override void Exit()
         {
-            Debug.Log("No more Runing");
+            //Debug.Log("No more Runing");
         }
     }
 

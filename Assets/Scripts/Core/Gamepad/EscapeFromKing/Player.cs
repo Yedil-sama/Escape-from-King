@@ -12,6 +12,7 @@ namespace Core.Gamepad.EscapeFromKing
         }
         public void Start()
         {
+            movement = GetComponent<PlayerMovement>();
             selectedWeapon = GetComponentInChildren<Weapon>();
         }
         public void Update()

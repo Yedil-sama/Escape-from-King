@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Core.Gamepad.EscapeFromKing
+namespace Core.PlayerStates
 {
     public class CrouchState : PlayerState
     {
@@ -8,7 +8,7 @@ namespace Core.Gamepad.EscapeFromKing
         public override void Enter()
         {
             playerMovement.GetComponent<CharacterController>().height = playerMovement.crouchHeight;
-            Debug.Log("Started to Crouch");
+            //Debug.Log("Started to Crouch");
         }
         public override void Update()
         {
@@ -21,13 +21,13 @@ namespace Core.Gamepad.EscapeFromKing
                 Exit();
             }
 
-            Debug.Log("Crouching");
+            //Debug.Log("Crouching");
         }
         public override void Exit()
         {
             playerMovement.GetComponent<CharacterController>().height = playerMovement.normalHeight;
 
-            Debug.Log("No more Crouching");
+            //Debug.Log("No more Crouching");
         }
     }
 

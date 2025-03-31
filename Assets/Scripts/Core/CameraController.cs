@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Core.Gamepad.EscapeFromKing
+namespace Core
 {
     public class CameraController : MonoBehaviour
     {
