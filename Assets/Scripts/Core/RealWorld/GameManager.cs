@@ -8,7 +8,9 @@ namespace Core.RealWorld
         
         public Player player;
         public Transform worldTransform;
+
         [SerializeField] private InventoryManager inventoryManager;
+
         public void Awake()
         {
             if (Instance == null)
@@ -26,6 +28,7 @@ namespace Core.RealWorld
             }
             InitializeInventory();
         }
+
         public void InitializeInventory()
         {
             inventoryManager.Initialize(player);

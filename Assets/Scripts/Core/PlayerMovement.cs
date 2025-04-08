@@ -22,7 +22,6 @@ namespace Core
 
         private Vector3 velocity;
         private CharacterController characterController;
-
         private PlayerState currentState;
 
         public void Start()
